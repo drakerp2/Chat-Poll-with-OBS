@@ -1,14 +1,5 @@
 # Licence GPL V2
 
-# PIP LIBRARIES
-# in theory, this allows someone to simply execute the driver.py file with a double click on windows after installing it from the windows store, and they never will actually need to open the terminal.  In theory.  I do not have a windows machine to test on.
-try: import matplotlib
-except ModuleNotFoundError: subprocess.run([python, '-m', 'pip', 'install', 'matplotlib'])
-try: import requests
-except ModuleNotFoundError: subprocess.run([python, '-m', 'pip', 'install', 'requests'])
-try: import websockets
-except ModuleNotFoundError: subprocess.run([python, '-m', 'pip', 'install', 'websockets'])
-
 # STANDARD PYTHON LIBRARIES
 from sys import argv, executable as python # executable is the path to the instance of python being used to run the current script
 from time import sleep
@@ -18,6 +9,14 @@ import asyncio
 import multiprocessing # thats right, we are using not 1, not 2, but 3(!!!) parrallism libraries, now all we need is threading and we'll have the whole family!
 from multiprocessing.shared_memory import SharedMemory
 
+# PIP LIBRARIES
+# in theory, this allows someone to simply execute the driver.py file with a double click on windows after installing it from the windows store, and they never will actually need to open the terminal.  In theory.  I do not have a windows machine to test on.
+try: import matplotlib
+except ModuleNotFoundError: subprocess.run([python, '-m', 'pip', 'install', 'matplotlib'])
+try: import requests
+except ModuleNotFoundError: subprocess.run([python, '-m', 'pip', 'install', 'requests'])
+try: import websockets
+except ModuleNotFoundError: subprocess.run([python, '-m', 'pip', 'install', 'websockets'])
 
 # LIBRARY INIT
 try: share = SharedMemory(name="INTERNAL_PACKET_TRANSFER_NODE", create=True, size=10000000) # 10 MB
