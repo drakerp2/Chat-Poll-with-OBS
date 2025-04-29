@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>OBS Poll</title>
+      <script>
+            const socket = new WebSocket("ws://localhost:36459"); // obs socket
+            socket.binaryType = 'arraybuffer';
+
+            socket.addEventListener("open", (event) => {
+                  socket.send("obs-callin");
+                  console.log("socket opened");
+            });
+
+            //! disclaimer, I pulled this straight off of google, I am not a javascript dev.
+            socket.addEventListener("message", (event) => {
+                  console.log("packet recieved from socket");
+                  const arrayBufferView = new Uint8Array(event.data);
+                  const blob = new Blob([arrayBufferView], { type: 'image/png' });
+                  const urlCreator = window.URL || window.webkitURL;
+                  const imageUrl = urlCreator.createObjectURL(blob);
+
+                  document.getElementById("img").src = imageUrl;
+            });
+      </script>
+</head>
+<body>
+      <img id="img" src="">
+</body>
+</html>

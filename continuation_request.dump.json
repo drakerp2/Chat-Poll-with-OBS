@@ -1,0 +1,323 @@
+{
+    "responseContext": {
+        "serviceTrackingParams": [
+            {
+                "service": "CSI",
+                "params": [
+                    {
+                        "key": "c",
+                        "value": "WEB"
+                    },
+                    {
+                        "key": "cver",
+                        "value": "2.20250428.01.00"
+                    },
+                    {
+                        "key": "yt_li",
+                        "value": "0"
+                    },
+                    {
+                        "key": "GetLiveChat_rid",
+                        "value": "0x10de5608c1afb985"
+                    }
+                ]
+            },
+            {
+                "service": "GFEEDBACK",
+                "params": [
+                    {
+                        "key": "logged_in",
+                        "value": "0"
+                    },
+                    {
+                        "key": "e",
+                        "value": "23804281,23880829,23880835,23986022,24004644,24077241,24166867,24181174,24241378,24290153,24439361,24453989,24459436,24566687,24699899,39320594,39325854,39327050,39327561,39327712,39328708,39329006,51010235,51020570,51025415,51037346,51037351,51063643,51072748,51091058,51095478,51098299,51115184,51141472,51148037,51152050,51176511,51178314,51178335,51178348,51178355,51183909,51184990,51204329,51222973,51227037,51228850,51237842,51242448,51256074,51272458,51285052,51300176,51300241,51303432,51311027,51311034,51313109,51313765,51313767,51314158,51324733,51338029,51338524,51340662,51341228,51342857,51349914,51351446,51353393,51354083,51354114,51354567,51355201,51355912,51359179,51360104,51360121,51360140,51361830,51362038,51364270,51364291,51366423,51366620,51367487,51369906,51372971,51375205,51375647,51375719,51380370,51380385,51380394,51386361,51386463,51386540,51389629,51390152,51391339,51394772,51394781,51396237,51397089,51397102,51397332,51399452,51401549,51403603,51404808,51404810,51406400,51406710,51407629,51409334,51410964,51411779,51413048,51413053,51413060,51413065,51413076,51413083,51413086,51414152,51414985,51417454,51417471,51417480,51417493,51417512,51417519,51417659,51418763,51420967,51421832,51421988,51423432,51425617,51426028,51427077,51428206,51428417,51428624,51430559,51431534,51432294,51432394,51432529,51433501,51433823,51435847,51435879,51435882,51435891,51435903,51435914,51435922,51436340,51438828,51439763,51439874,51440688,51440727,51441712,51441840,51442501,51445564,51445575,51445586,51445595,51445604,51445607,51445618,51446242,51446926,51447191,51449034,51449911,51450811,51451296,51452345,51452419,51452481,51452495,51453930,51455008,51456025,51456121,51456144,51456423,51456628,51457083,51458213,51458922,51458927,51459385,51460379,51461446,51462020,51462589,51462767,51463054,51463227,51463334,51463930,51464992,51465052,51466730,51467275,51467452,51467524,51467672,51467676,51468320,51468762,51469633,51469793,51469814,51471144,51471783,51473393,51473812,51474325,51475688,51476588"
+                    },
+                    {
+                        "key": "visitor_data",
+                        "value": "CgthU0pmSHQtai0tSSjtmMHABjIKCgJVUxIEGgAgVA%3D%3D"
+                    }
+                ]
+            },
+            {
+                "service": "GUIDED_HELP",
+                "params": [
+                    {
+                        "key": "logged_in",
+                        "value": "0"
+                    }
+                ]
+            },
+            {
+                "service": "ECATCHER",
+                "params": [
+                    {
+                        "key": "client.version",
+                        "value": "2.20250428"
+                    },
+                    {
+                        "key": "client.name",
+                        "value": "WEB"
+                    }
+                ]
+            }
+        ],
+        "mainAppWebResponseContext": {
+            "loggedOut": true,
+            "trackingParam": "kV9fmPxhojXCz39TnrslLKPQSQR"
+        },
+        "webResponseContextExtensionData": {
+            "hasDecorated": true
+        }
+    },
+    "continuationContents": {
+        "liveChatContinuation": {
+            "continuations": [
+                {
+                    "invalidationContinuationData": {
+                        "invalidationId": {
+                            "objectSource": 1056,
+                            "objectId": "Y2hhdH5GU2JzaUhrNDBOSQ==",
+                            "topic": "chat~FSbsiHk40NI",
+                            "subscribeToGcmTopics": true,
+                            "protoCreationTimestampMs": "1745898651625"
+                        },
+                        "timeoutMs": 10000,
+                        "continuation": "0ofMyAPTBBqgA0Npa3FKd29ZVlVOcllpMXlOekF5ZFdoNE5DMDJUSEp0WlhSd0xVOTNFZ3RHVTJKemFVaHJOREJPU1JxR0FxcTV3YjBCX3dFS19BRm9kSFJ3Y3pvdkwzZDNkeTU1YjNWMGRXSmxMbU52YlM5c2FYWmxYMk5vWVhRX1kyOXVkR2x1ZFdGMGFXOXVQVEJ2WmsxNVFVOUJRVkp3WlZFeWJISmpWWEF6WWpGc1YxWlZOWGxYVjJ0NFpWVTFObEZZYkd0V01tY3dWR3ROZDAxc1VrbFRibEpoVjBaS00xUkdWVFZOTUZadVpFVmtWazFyY0RaWlZsWnZZMnMxUlZGck9WUlZiVGxWVG01R2NWcElWbEpTVlRWRVdqTlNTRlpVU2t0bGJVWldZVWhLVDFKRlNsQlZNVTVDVVdzeFFsRlRWWHBTUkVGQ1oyZEZTVU5CVVZsQmFVRkJTMEZEU1VGUlIyZEJZMHQ0ZG5CSGNsOUpkMFJ4UVVWQmMyZEZRU1poZFhSb2RYTmxjajB3Sm5ZOVJsTmljMmxJYXpRd1Rra2dBakFBKLr__aar_IwDMABAAkpqCAAYACAASgoIARAAGAAgADAAUJDJ3JGr_IwDWAN4AKIBAKoBDBAAGgAiACoECAAQALABAMABAMgBkMnckav8jAPiAQwI7ZjBwAYQzKGblAPoAQD4AQCIAgCQAgCaAgsIjZnBwAYQi43lZ1CvnqWnq_yMA1iajpDBivuMA4IBBAgEGAGIAQCaAQIIAKABxtDGp6v8jAO6AQIICtABmZnBwAY%3D"
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "addChatItemAction": {
+                        "item": {
+                            "liveChatTextMessageRenderer": {
+                                "message": {
+                                    "runs": [
+                                        {
+                                            "text": "Use Torches for 100% chance to light"
+                                        }
+                                    ]
+                                },
+                                "authorName": {
+                                    "simpleText": "Baziwan"
+                                },
+                                "authorPhoto": {
+                                    "thumbnails": [
+                                        {
+                                            "url": "https://yt4.ggpht.com/CekyR3pekYzOl657bVuNYmFt0QuF8w1MOmnTOtrVGywhk1V1LkPLvcsvb4hB2egKSQPu0NqcMg=s32-c-k-c0x00ffffff-no-rj",
+                                            "width": 32,
+                                            "height": 32
+                                        },
+                                        {
+                                            "url": "https://yt4.ggpht.com/CekyR3pekYzOl657bVuNYmFt0QuF8w1MOmnTOtrVGywhk1V1LkPLvcsvb4hB2egKSQPu0NqcMg=s64-c-k-c0x00ffffff-no-rj",
+                                            "width": 64,
+                                            "height": 64
+                                        }
+                                    ]
+                                },
+                                "contextMenuEndpoint": {
+                                    "commandMetadata": {
+                                        "webCommandMetadata": {
+                                            "ignoreNavigation": true
+                                        }
+                                    },
+                                    "liveChatItemContextMenuEndpoint": {
+                                        "params": "Q2g0S0hBb2FRMUJ4WVRGeFlYSmZTWGRFUmxwdVdteEJhMlJpTVc5R1YxRWFLU29uQ2hoVlEydGlMWEkzTURKMWFIZzBMVFpNY20xbGRIQXRUM2NTQzBaVFluTnBTR3MwTUU1SklBSW9CRElhQ2hoVlEwNVZSRkZqTmtJeFFXeEdWRGwxU0hwU2JHeHBjR2M0QWtnQVVBRSUzRA=="
+                                    }
+                                },
+                                "id": "ChwKGkNQcWExcWFyX0l3REZablpsQWtkYjFvRldR",
+                                "timestampUsec": "1745898649785471",
+                                "authorBadges": [
+                                    {
+                                        "liveChatAuthorBadgeRenderer": {
+                                            "customThumbnail": {
+                                                "thumbnails": [
+                                                    {
+                                                        "url": "https://yt3.ggpht.com/v2whiHAngWz8nQaCFzw7Y-m7vJGUFVHrds3dnGCiQRNHnpxHKtjUu9fg_21bz5tiEv0OYCnQEg=s16-c-k",
+                                                        "width": 16,
+                                                        "height": 16
+                                                    },
+                                                    {
+                                                        "url": "https://yt3.ggpht.com/v2whiHAngWz8nQaCFzw7Y-m7vJGUFVHrds3dnGCiQRNHnpxHKtjUu9fg_21bz5tiEv0OYCnQEg=s32-c-k",
+                                                        "width": 32,
+                                                        "height": 32
+                                                    }
+                                                ]
+                                            },
+                                            "tooltip": "Member (1 year)",
+                                            "accessibility": {
+                                                "accessibilityData": {
+                                                    "label": "Member (1 year)"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "authorExternalChannelId": "UCNUDQc6B1AlFT9uHzRllipg",
+                                "contextMenuAccessibility": {
+                                    "accessibilityData": {
+                                        "label": "Chat actions"
+                                    }
+                                }
+                            }
+                        },
+                        "clientId": "CPqa1qar_IwDFZnZlAkdb1oFWQ"
+                    }
+                },
+                {
+                    "addChatItemAction": {
+                        "item": {
+                            "liveChatTextMessageRenderer": {
+                                "message": {
+                                    "runs": [
+                                        {
+                                            "emoji": {
+                                                "emojiId": "UCkb-r702uhx4-6Lrmetp-Ow/OiOiZvT2F_28_9EPr_6jqAQ",
+                                                "shortcuts": [
+                                                    ":_jellyFire:",
+                                                    ":jellyFire:",
+                                                    ":_Fire:",
+                                                    ":Fire:"
+                                                ],
+                                                "searchTerms": [
+                                                    "_jellyFire",
+                                                    "jellyFire",
+                                                    "_Fire",
+                                                    "Fire"
+                                                ],
+                                                "image": {
+                                                    "thumbnails": [
+                                                        {
+                                                            "url": "https://yt3.ggpht.com/AX0RzH2o0pXh4x4jcxIqfBot9Qv428Ftv2ziTwZi3m0EiGuUfR5YG1-ykk8o7BA6pQJippyoIA=w24-h24-c-k-nd",
+                                                            "width": 24,
+                                                            "height": 24
+                                                        },
+                                                        {
+                                                            "url": "https://yt3.ggpht.com/AX0RzH2o0pXh4x4jcxIqfBot9Qv428Ftv2ziTwZi3m0EiGuUfR5YG1-ykk8o7BA6pQJippyoIA=w48-h48-c-k-nd",
+                                                            "width": 48,
+                                                            "height": 48
+                                                        }
+                                                    ],
+                                                    "accessibility": {
+                                                        "accessibilityData": {
+                                                            "label": "jellyFire"
+                                                        }
+                                                    }
+                                                },
+                                                "isCustomEmoji": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                "authorName": {
+                                    "simpleText": "Retrograde Rustic"
+                                },
+                                "authorPhoto": {
+                                    "thumbnails": [
+                                        {
+                                            "url": "https://yt4.ggpht.com/lrLfqTmMjSxaxKqIbrwzAHr_8Dvy0T6mAxDEr76QZA8etpCMmTm94a9zVk2ZwA0yaqdNg6MZP_g=s32-c-k-c0x00ffffff-no-rj",
+                                            "width": 32,
+                                            "height": 32
+                                        },
+                                        {
+                                            "url": "https://yt4.ggpht.com/lrLfqTmMjSxaxKqIbrwzAHr_8Dvy0T6mAxDEr76QZA8etpCMmTm94a9zVk2ZwA0yaqdNg6MZP_g=s64-c-k-c0x00ffffff-no-rj",
+                                            "width": 64,
+                                            "height": 64
+                                        }
+                                    ]
+                                },
+                                "contextMenuEndpoint": {
+                                    "commandMetadata": {
+                                        "webCommandMetadata": {
+                                            "ignoreNavigation": true
+                                        }
+                                    },
+                                    "liveChatItemContextMenuEndpoint": {
+                                        "params": "Q2g0S0hBb2FRMUF6ZUY5aFlYSmZTWGRFUmxaclVERm5RV1JwY0RnME1GRWFLU29uQ2hoVlEydGlMWEkzTURKMWFIZzBMVFpNY20xbGRIQXRUM2NTQzBaVFluTnBTR3MwTUU1SklBSW9CRElhQ2hoVlEydFRSelIzY1VwNVpHWnlZbkkzU0hFd01rcFFMV2M0QWtnQVVBRSUzRA=="
+                                    }
+                                },
+                                "id": "ChwKGkNQM3hfYWFyX0l3REZWa1AxZ0FkaXA4NDBR",
+                                "timestampUsec": "1745898650435514",
+                                "authorBadges": [
+                                    {
+                                        "liveChatAuthorBadgeRenderer": {
+                                            "customThumbnail": {
+                                                "thumbnails": [
+                                                    {
+                                                        "url": "https://yt3.ggpht.com/v2whiHAngWz8nQaCFzw7Y-m7vJGUFVHrds3dnGCiQRNHnpxHKtjUu9fg_21bz5tiEv0OYCnQEg=s16-c-k",
+                                                        "width": 16,
+                                                        "height": 16
+                                                    },
+                                                    {
+                                                        "url": "https://yt3.ggpht.com/v2whiHAngWz8nQaCFzw7Y-m7vJGUFVHrds3dnGCiQRNHnpxHKtjUu9fg_21bz5tiEv0OYCnQEg=s32-c-k",
+                                                        "width": 32,
+                                                        "height": 32
+                                                    }
+                                                ]
+                                            },
+                                            "tooltip": "Member (1 year)",
+                                            "accessibility": {
+                                                "accessibilityData": {
+                                                    "label": "Member (1 year)"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "authorExternalChannelId": "UCkSG4wqJydfrbr7Hq02JP-g",
+                                "contextMenuAccessibility": {
+                                    "accessibilityData": {
+                                        "label": "Chat actions"
+                                    }
+                                }
+                            }
+                        },
+                        "clientId": "CP3x_aar_IwDFVkP1gAdip840Q"
+                    }
+                }
+            ]
+        }
+    },
+    "frameworkUpdates": {
+        "entityBatchUpdate": {
+            "mutations": [
+                {
+                    "entityKey": "EiNVZ3c0eWM1bDdJdTlwSnA3ZXg1NEFhQUJEcWdCc2V6bm5RSSDxAygB",
+                    "type": "ENTITY_MUTATION_TYPE_REPLACE",
+                    "payload": {
+                        "replyCountEntity": {
+                            "key": "EiNVZ3c0eWM1bDdJdTlwSnA3ZXg1NEFhQUJEcWdCc2V6bm5RSSDxAygB",
+                            "replyCount": {
+                                "content": "5"
+                            },
+                            "replyCountNumber": "5",
+                            "replyButtonAccessibilityText": "Reply to this Super Chat along with 5 other people"
+                        }
+                    }
+                },
+                {
+                    "entityKey": "EiNVZ3pkdG9FaUJVWDljbk5NRmE1NEFhQUJEcWdCNWEyeGdBSSDxAygB",
+                    "type": "ENTITY_MUTATION_TYPE_REPLACE",
+                    "payload": {
+                        "replyCountEntity": {
+                            "key": "EiNVZ3pkdG9FaUJVWDljbk5NRmE1NEFhQUJEcWdCNWEyeGdBSSDxAygB",
+                            "replyCount": {
+                                "content": "1"
+                            },
+                            "replyCountNumber": "1",
+                            "replyButtonAccessibilityText": "Reply to this Super Chat along with 1 other person"
+                        }
+                    }
+                }
+            ],
+            "timestamp": {
+                "seconds": "1745898651",
+                "nanos": 626047437
+            }
+        }
+    },
+    "liveChatStreamingResponseExtension": {
+        "lastPublishAtUsec": "1745898651083043"
+    }
+}

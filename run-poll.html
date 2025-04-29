@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Run Poll</title>
+      <script>
+            const socket = new WebSocket("ws://localhost:36458"); // poll socket
+            socket.binaryType = 'arraybuffer';
+
+            socket.addEventListener("open", (event) => {
+                  socket.send(window.location.search); // sends params passed by obs-endpoint.html to the backend
+                  console.log("socket opened");
+            });
+
+            function end_poll() {
+                  const socket = new WebSocket("ws://localhost:36460"); // end poll socket
+                  socket.addEventListener("open", (event) => { // 
+                        socket.send("end");
+                        history.back();
+                  });
+            }
+      </script>
+</head>
+<body style="background-color:rgb(177, 177, 177);">
+      <button onclick="end_poll()">End Poll</button>
+</body>
+</html>

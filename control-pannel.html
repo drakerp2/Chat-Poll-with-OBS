@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Control Pannel</title>
+      <script>
+            function signal_chatpoll(message) {
+                  const socket = new WebSocket("ws://localhost:36460"); // end poll socket
+                  socket.addEventListener("open", (event) => {
+                        socket.send(message);
+                      //  window.close()
+                  });
+            }
+      </script>
+</head>
+<body style="background-color:rgb(175, 175, 175);"> <!-- making an attempt to not cause permenant eye damage to streamers -->
+      <p> <button onclick="signal_chatpoll('quit')">Shutdown Chat Poll</button> <button onclick="signal_chatpoll('restart')">Restart Chat Poll</button></p>
+      <form action="/run-poll.html" method="GET">
+            <p><input type="text" name="streamid" placeholder="Stream ID" required> <input type="text" name="duration" placeholder="Poll length (in seconds)" required></p>
+
+            <!-- Race condition will be resolved with planned refactor to threading library (I did not realize there was a websockets library version for threading when I started this, but it is what I'm more comfortable/familiar with, but now I just want to ship first working build, and this isn't system breaking) -->
+            <p>Milliseconds Between Frames: <input type="text" name="frametime" placeholder="1000"> !May cause race condtion if set too low, if poll is not erasing, increase this! The time between reads from youtube (increase this if your internet is slow, decrease this if you want a smoother/higher FPS image)</p>
+            <p>Allow Multiple Responses: <input type="checkbox" id="allow_multiple_responses" name="allow_multiple_responses" value="true"> allows people to be counted for multiple entries</p>
+            <p>Allow Duplicate Respones: <input type="checkbox" id="allow_duplicate_responses" name="allow_duplicate_responses" value="true"> allows people to be counted multiple times for the same entry</p>
+            <p>Allow Changed Respones: <input type="checkbox" id="allow_changed_responses" name="allow_changed_responses" value="true"> allows people to change their response (ignored if "Allow Multiple Responses" or "Allow Duplicate Responses" are checked)</p>
+            <p>Ingore Case: <input type="checkbox" id="ignore_case" name="ignore_case" value="true"> counts response and Response as the same value if checked</p>
+            <p>Response Prefix: <input type="text" name="prefix" placeholder="prefix"> only count response if started with prefix, so if prefix = "!", then the response "!games" will be counted as a vote for "games" but just typing "games" will not </p>
+
+            <h3>Display Options:</h3>
+            <p>Sort by Response Count: <input type="checkbox" id="sort_responses" name="sort_responses" value="true"> if the legend is getting placed over the top of bars, trying checking this (assumed true if no options given)</p> 
+            <p>Font Size: <input type="text" name="fontsize" placeholder="10.0"> <input type="text" name="legfontsize" placeholder="legend"> (legend font size is what determines the legend size)</p>
+            <p>Graph DPI: <input type="text" name="dpi" placeholder="dpi"> Graph Aspect Ratio: <input type="text" name="aspectratio" placeholder="x:y"></p>
+            <p>Graph Background Color: <input type="text" name="bgcolor" placeholder="#rrggbb"> <input type="text" name="bgalpha" placeholder="alpha"> (leave blank for transparent)</p>
+            <p>Graph Edge Color: <input type="text" name="edgecolor" placeholder="#rrggbb"> Graph Text Color: <input type="text" name="txtcolor" placeholder="#rrggbb"></p>
+            <p>Legend is only shown if you have option values that differ from option keys</p>
+            <p>Legend Background Color: <input type="text" name="legbgcolor" placeholder="#rrggbb"> <input type="text" name="legbgalpha" placeholder="alpha"> (leave blank for transparent)</p>
+            <p>Legend Edge Color: <input type="text" name="legedgecolor" placeholder="#rrggbb"> Legend Text Color: <input type="text" name="legtxtcolor" placeholder="#rrggbb"></p>
+            
+            <h3>Poll Options:</h3> <!-- any unfilled boxes are ignored, I would like to pull any response and make top 10, that is likely not going to be implimented in V1 -->
+            <p>The key is what you want chat to type, the value is what it represents (so "1 in chat if yes, 2 in chat if no" would be key=1,value=yes;key=2,value=no).  If value is blank, it is assumed value=key</p>
+            <p>If all keys are left blank, the poll will tally the ten most common answers of all messages sent.  If either option 1 color or all colors are given, they will be used. </p>
+            <p>Colors are standard html hex codes formated "#rrggbb".  Colors must be given for all options, option 1, or no option.</p>
+            <p>If no colors are given, colors will be chosen at random if left blank with an attempt to avoid repitition. If only option 1 color is given it will be extrapolated to all options.</p>
+            <p><input type="text" name="option1key" placeholder="Option 1 response key"> <input type="text" name="option1value" placeholder="Option 1 response value"> <input type="text" name="option1color" placeholder="Option 1 color"></p>
+            <p><input type="text" name="option2key" placeholder="Option 2 response key"> <input type="text" name="option2value" placeholder="Option 2 response value"> <input type="text" name="option2color" placeholder="Option 2 color"></p>
+            <p><input type="text" name="option3key" placeholder="Option 3 response key"> <input type="text" name="option3value" placeholder="Option 3 response value"> <input type="text" name="option3color" placeholder="Option 3 color"></p>
+            <p><input type="text" name="option4key" placeholder="Option 4 response key"> <input type="text" name="option4value" placeholder="Option 4 response value"> <input type="text" name="option4color" placeholder="Option 4 color"></p>
+            <p><input type="text" name="option5key" placeholder="Option 5 response key"> <input type="text" name="option5value" placeholder="Option 5 response value"> <input type="text" name="option5color" placeholder="Option 5 color"></p>
+            <p><input type="text" name="option6key" placeholder="Option 6 response key"> <input type="text" name="option6value" placeholder="Option 6 response value"> <input type="text" name="option6color" placeholder="Option 6 color"></p>
+            <p><input type="text" name="option7key" placeholder="Option 7 response key"> <input type="text" name="option7value" placeholder="Option 7 response value"> <input type="text" name="option7color" placeholder="Option 7 color"></p>
+            <p><input type="text" name="option8key" placeholder="Option 8 response key"> <input type="text" name="option8value" placeholder="Option 8 response value"> <input type="text" name="option8color" placeholder="Option 8 color"></p>
+            <p><input type="text" name="option9key" placeholder="Option 9 response key"> <input type="text" name="option9value" placeholder="Option 9 response value"> <input type="text" name="option9color" placeholder="Option 9 color"></p>
+            <p><input type="text" name="option10key" placeholder="Option 10 response key"> <input type="text" name="option10value" placeholder="Option 10 response value"> <input type="text" name="option10color" placeholder="Option 10 color"></p>
+            <button type="submit">Start Poll</button> <!-- If you need more than 10 options, you can simply copy and paste this line more times, and adjust NUMBER_OF_POLL_OPTIONS in poll_socket.py-->
+
+            <p>Tip: you can construct the url of the "run-poll" page manually, or copy them after using this menu, allowing you to have polls ready to go ahead of time, and simply paste the link in.</p>
+            <p>Tip: you can test without OBS connected by opening the webpage at localhost:36457/obs-endpoint.html in a browser, although OBS will be unable to connect while it is open.</p>
+      </form>
+</body>

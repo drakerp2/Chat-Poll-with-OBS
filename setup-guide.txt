@@ -1,0 +1,55 @@
+Install Python 3.12 or greater
+	- Windows: available from the microsoft store at https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-US&gl=US or from python's website directly at https://www.python.org/downloads/windows/
+	- Mac: while there are other options, it is highly advised you download directly from python's website https://www.python.org/downloads/macos/
+	- Linux: pre-installed version may be out of date, but most up to date version should be available from your distro's package manager
+
+Install OBS
+	- Linux: make sure your version supports browser sources, as this is an issue with some builds
+
+Install Chat-Poll
+
+Create a new browser source in OBS with the url http://localhost:36457/obs-endpoint.html
+	- It will appear that there is nothing, this is expected
+	- tip: mind that you enter http and NOT https
+
+Run driver.py
+	- Windows: you should be able to double click and run it like an executable, if this does not work, try the other method
+	- All: open your command terminal and navigate to the chat_poll folder and enter the command "[python_executable] driver.py" where python_executable is as follows
+		- Windows: "py", if this does not work try "python", if this fails python likely did not properrly set itself in your "path" on install, this guide should hopefully help: https://realpython.com/add-python-to-path/
+			- tip: windows comes pre-installed with "command prompt" and "power shell", either terminal will work, and you should be able to find them by typing them into your command search bar
+			- tip: to navigate to the chat_poll folder in the command prompt, you can use the command "cd" to show your current location, "dir" to show your current location's contents, and "cd [folder]" to move into another folder
+		- Mac and Linux: "python", if this fails python likely did not properrly set itself in your "path" on install, this guide should hopefully help: https://realpython.com/add-python-to-path/
+			- tip: On MacOS the terminal is simply called "Terminal"
+			- tip: to navigate to chat_poll folder in the command prompt, you can use the command "pwd" to show your current location, "ls" to show your current location's contents, and "cd [folder]" to move into another folder
+
+When Chat-Poll starts, it should bring up a new tab in your browser, if it does not, you can open http://localhost:36457/control-pannel.html in your browser directly
+
+Refresh OBS browser source
+	- note: you can only have one active Chat-Poll browser source at a time
+
+Get your stream id and paste it into the "Stream ID" box in the control pannel
+	- this is what appears at the end of your livestream url with "https://www.youtube.com/watch?v=[stream_id]"
+	- this is also what appears in your youtube studio page url for the livestream "https://studio.youtube.com/video/[stream_id]/livestreaming"
+
+You must also enter a poll length, but all other setting are optional.
+
+Click "Start Poll" at the bottom of the page
+	- note: you can only have one poll going at a time
+	- tip: it is recommended that you go live with a private stream, and run Chat-Poll with "Allow Multiple Responses" and "Allow Duplicate Responses" checked to test out and fit it to your OBS scene
+
+You will now be redirected to the run-poll.html page.  You can click "End Poll" to clear the poll from your stream (also able to end the poll early) and take you back to the control pannel (with previous settings saved)
+	- If for some reason the poll does not propperly clear, you can go foward a page in your browser to return the run-poll page and try ending it again.  If it persists it is advised you increase the time between frames.
+
+If you are experiencing errors or bugs, click "Restart Chat Poll" and refresh your OBS browser source.
+
+! IMPORTANT ! When exiting the application use the "Shutdown Chat Poll" button to enusre that all processes exit propperly, and you don't leak resources.
+
+
+For further inqueries or suggested features, you can leave a comment or an issue on the github or contact me directly on discord @drakerp2
+
+
+Further reading:
+https://learn.microsoft.com/en-us/windows/python/beginners
+https://wiki.python.org/moin/BeginnersGuide
+
+

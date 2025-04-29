@@ -1,0 +1,19 @@
+Add integration with the OBS api to refresh browser source automatically (high priority)
+	obspython library not available with PyPy and built exclusively for windows, will need to re-wrap needed libraries from OBS' core C API and make custom compiles to allow for cross platform support (I am on linux)
+
+Refactor asyncio and multiprocessing to instead just use threading (high priority)
+
+Create real unit tests before I gauge my eyes out manually running tests over and over again
+
+Make random colors associate with keys rather than positions (as an option, because why not)
+
+Get someone to build a real frontend that isn't scuffed html and pyplots piped through websockets (low priority, I have someone in mind, but he is currently tied up in a different project)
+
+impliment rgb color pickers on the control pannel
+
+add more sufisticated CLI functionality/options
+	Allow custom ports to be set 
+
+Figure out a way for it to automatically detect the user's stream
+
+
