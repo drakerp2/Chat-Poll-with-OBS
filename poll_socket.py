@@ -142,7 +142,10 @@ def get_target_responses(params) -> dict[str, list[str, tuple[float, float, floa
 
 		## If key is found
 
+		key = key.replace('+', ' ')
+
 		if (value:= params.get(f"option{i}value")) is None: value = params[f"option{i}key"] # checks for value
+		else: value = value.replace('+', ' ')
 
 		if tr_len == 0: params["has_colors"] = int(params.get(f"option{i}color") is not None) # converts the boolean to 0 if false, 1 if true.  0 means we use randomized colors, 1 means we use selected colors, and 2 indicates the state where 1 color is given but not all colors, and thus set everything to a uniform color
 		if tr_len > 0 and params["has_colors"] == 2: params[f"option{i}color"] = global_color # This makes ensures the first entry is the global color and not the last
@@ -154,7 +157,7 @@ def get_target_responses(params) -> dict[str, list[str, tuple[float, float, floa
 				params["has_colors"] = 2 # only some colors
 				if global_color is None: global_color = params[f"option{i}color"] # sets global color if it hasn't been already
 				else: params[f"option{i}color"] = global_color # sets color to global color if there is one
-				for resp in params["target_responses"].values(): resp[1] = global_color # corrects other colors to global color
+				for resp in ret.values(): resp[1] = global_color # corrects other colors to global color
 			None
 		None
 		
