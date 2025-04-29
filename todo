@@ -16,4 +16,4 @@ add more sufisticated CLI functionality/options
 
 Figure out a way for it to automatically detect the user's stream
 
-
+Integrate with Twitch so Chat-Poll can provide a cross platform simultaneos polling solution to streamers without having to direct people to an outside URL
